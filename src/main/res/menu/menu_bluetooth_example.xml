@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:bluetooth="http://schemas.android.com/apk/res-auto"
+    tools:context=".com.luc.bluetooth.BluetoothActivity">
+
+    <item android:id="@+id/control" android:title="Manual Control" android:enabled="true"
+        android:orderInCategory="100" bluetooth:showAsAction="always|withText" />
+
+    <item android:id="@+id/slave" android:title="Slave Mode"
+        android:orderInCategory="101" bluetooth:showAsAction="always|withText" />
+
+</menu>

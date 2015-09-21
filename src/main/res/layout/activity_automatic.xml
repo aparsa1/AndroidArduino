@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.luc.bluetooth.AutomaticActivity"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Number of Actions: 0"
+            android:id="@+id/txtActions"
+            />
+        <Button
+            android:padding="2dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/btnStart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Start Action"
+            android:onClick="Start"
+            android:background="#FF4000"
+            android:textColor="#FFFFFF"
+            />
+        <Button
+            android:padding="2dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/btnAdd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Add Action"
+            android:onClick="AddAction"
+            android:background="#FF4000"
+            android:textColor="#FFFFFF"
+            />
+    </LinearLayout>
+    <ScrollView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView" >
+
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tlMain"
+            >
+
+
+
+
+
+        </TableLayout>
+
+    </ScrollView>
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="2dp" android:background="#BBBBBB"></LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText android:background="#DDDDDD"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:text="y=4;while (y) {
+              GO_FORWARD();
+               GO_RIGHT(); y=y-1;
+             }"
+            />
+    </LinearLayout>
+
+</LinearLayout>
